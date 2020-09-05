@@ -1,0 +1,158 @@
+html {
+  min-height: 100%;
+}
+
+body {
+  background: hsl(257, 40%, 49%);
+  background-image: url(images/bg-desktop.svg);
+  background-size: cover;
+  font-size: 1em;
+}
+.logo {
+  margin: 4% 8%;
+}
+.shadow {
+  box-shadow: 0 3px 1px #000;
+}
+
+.principal-container {
+  width: 80%;
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+  justify-content: space-between;
+}
+
+.left-container,
+.right-container {
+  width: 40%;
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.button {
+  padding: 20px 70px;
+  border: none;
+  font-family: "Poppins";
+  color: hsl(257, 40%, 49%);
+  font-size: 1.3em;
+  border-radius: 50px;
+}
+.right-container .title {
+  font-family: "Poppins", Arial, Helvetica, sans-serif;
+  color: #fff;
+  font-size: 2.6em;
+  margin-left: 0;
+  margin-bottom: 0;
+}
+
+.parraf {
+  font-family: "Open Sans";
+  color: #fff;
+  font-size: 1.4em;
+}
+
+.social-media li {
+  margin-left: 0.4%;
+  margin-right: 2%;
+  width: 3%;
+  height: auto;
+  border: #fff 2px solid;
+  border-radius: 100%;
+}
+
+.list-social-media {
+  display: flex;
+  justify-content: flex-end;
+  list-style: none;
+}
+
+.list-social-media li a {
+  color: #fff;
+}
+
+.list-social-media li {
+  text-align: center;
+  font-size: 2em;
+  padding: 0.7%;
+}
+
+.attribution {
+  font-size: 1.5em;
+  text-align: center;
+  color: #fff;
+}
+.attribution a {
+  color: black;
+}
+@media (max-width: 1440px) {
+  .principal-container {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 1100px) and (min-width: 801px) {
+  .left-container .mockups {
+    width: 100%;
+    height: auto;
+  }
+
+  .principal-container {
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  body {
+    width: 95%;
+    background-image: none;
+    background-image: url(images/bg-mobile.svg);
+    background-position: top;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+  .logo {
+    margin: 5% 5% 10%;
+  }
+  .principal-container {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .left-container .mockups {
+    width: inherit;
+  }
+
+  .button {
+    width: 70%;
+  }
+
+  .right-container {
+    justify-content: center;
+    text-align: center;
+  }
+
+  .left-container,
+  .right-container {
+    width: 100%;
+    height: auto;
+  }
+  .list-social-media {
+    justify-content: center;
+  }
+
+  .social-media {
+    padding: 5%;
+    margin-top: 5%;
+  }
+
+  .social-media li {
+    width: 9%;
+    height: auto;
+    font-size: 1.5em;
+  }
+}
