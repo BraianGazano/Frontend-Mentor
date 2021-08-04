@@ -4,15 +4,15 @@ Esta es mi solución del [Tip calculator app challenge de Frontend Mentor](https
 
 ## Tabla de contenidos
 
-- [Overview](#overview)
-  - [El desafio](#the-challenge)
-  - [Screenshot](#screenshot)
-  - [Links](#links)
-- [Mi proceso](#my-process)
-  - [Construido con](#built-with)
-  - [Lo que aprendí](#what-i-learned)
-  - [Siguientes desarrollos](#continued-development)
-- [Autor](#author)
+- Overview
+  - El desafio
+  - Screenshot
+  - Links
+- Mi proceso
+  - Construido con
+  - Lo que aprendí
+  - Siguientes desarrollos
+- Autor
 
 ## Overview
 
