@@ -30,8 +30,8 @@ El usuario será capaz de:
 
 ### Links
 
-- Solución en GitHub URL: [](https://github.com/BraianGazano/Frontend-Mentor/tree/master/tip-calculator-app-main)
-- Sitio URL: [Add live site URL here](https://your-live-site-url.com)
+- Solución en GitHub URL: [Aquí](https://github.com/BraianGazano/Frontend-Mentor/tree/master/tip-calculator-app-main)
+- Sitio URL: [Aquí](https://your-live-site-url.com)
 
 ## Mi proceso
 
