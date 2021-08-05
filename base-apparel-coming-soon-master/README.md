@@ -11,7 +11,7 @@ Esta es mi solución del [Base apparel coming soon challenge de Frontend Mentor]
 - Mi proceso
   - Construido con
   - Lo que aprendí
-- Autor](#author)
+- Autor
 
 ## Overview
 
@@ -28,8 +28,8 @@ El usuario será capaz de:
 
 ### Links
 
-- Solución en GitHub URL: [Add solution URL here](https://your-solution-url.com)
-- Sitio URL: [Add live site URL here](https://your-live-site-url.com)
+- Solución en GitHub URL: [Aquí](https://github.com/BraianGazano/Frontend-Mentor/tree/master/base-apparel-coming-soon-master)
+- Sitio URL: [Aquí](https://base-appare-3j1xjbly0-braiangazano.vercel.app/)
 
 ## Mi proceso
 
