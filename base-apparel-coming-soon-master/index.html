@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap" rel="stylesheet">  
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link href="styles.css" rel="stylesheet">
+  <title>Frontend Mentor | Base Apparel coming soon page</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <div class="contenedor-principal">
+    <div class="contenedor-izquierdo">
+      <img src="images/logo.svg" alt="Base Apparel" class="logo">
+      <img src="images/hero-mobile.jpg" alt="Hero" class="hero-movil">
+      <div class="contenido">
+        <h1 class="primer-titulo">WE'RE</h1>
+        <h1 class="segundo-titulo">COMING<br> SOON</h1>      
+        <p class="texto">
+          Hello fellow shoppers! We're currently building our new fashion store. 
+        Add your email below to stay up-to-date with announcements and our launch deals.
+        </p>
+        <form class="campo-email">
+          <input type="text" placeholder="Email Address">
+          <button type="submit"><img src="images/icon-arrow.svg"></button>
+        </form>
+        <div class="error">
+          <img class="alerta-imagen alerta-escondida" src="images/icon-error.svg">
+          <p class="alerta alerta-escondida">Please provide a valid email</p>
+        </div>
+      </div>
+    </div>
+    <div class="contenedor-derecho">
+      <img src="images/hero-desktop.jpg" alt="Hero" class="foto">
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
