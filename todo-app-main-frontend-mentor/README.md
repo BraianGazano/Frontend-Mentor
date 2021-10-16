@@ -32,10 +32,10 @@ Los usuarios serán capaces de:
 
 ### Screenshot
 
-![Desktop Design Light](./screenshots/desktop-design-light.png)
-![Desktop Design Dark](./screenshots/desktop-design-dark.png)
-![Mobile Design Light](./screenshots/mobile-design-light.png)
-![Mobile Design Dark](./screenshots/mobile-design-dark.png)
+![Diseño escritorio claro](./screenshots/escritorio-claro.png)
+![Diseño escritorio oscuro](./screenshots/escritorio-oscuro.png)
+![Diseño movil claro](./screenshots/movil-claro.png)
+![Diseño movil oscuro](./screenshots/movil-oscuro.png)
 
 ### Links
 
