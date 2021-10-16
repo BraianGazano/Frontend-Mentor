@@ -1,6 +1,6 @@
 # Frontend Mentor - Todo app solution
 
-This is a solution to the [Todo app challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/todo-app-Su1_KokOW). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
+Esta es la solución para: [Todo app challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/todo-app-Su1_KokOW).
 
 ## Table of contents
 
@@ -19,17 +19,16 @@ This is a solution to the [Todo app challenge on Frontend Mentor](https://www.fr
 
 ### The challenge
 
-Users should be able to:
+Los usuarios serán capaces de:
 
-- View the optimal layout for the app depending on their device's screen size
-- See hover states for all interactive elements on the page
-- Add new todos to the list
-- Mark todos as complete
-- Delete todos from the list
-- Filter by all/active/complete todos
-- Clear all completed todos
-- Toggle light and dark mode
-- **Bonus**: Drag and drop to reorder items on the list
+- Ver en una interfaz optima segun el dispositivo que se utilice
+- Añadir nuevas tareas a la lista
+- Marcar los que se encuentren completos
+- Eliminar tareas
+- Filtrar segun corresponda
+- Eliminar todas las completas
+- Intercambiar entre tema claro/oscuro
+- **Bonus**: Arrastrar y reorganizar las tareas segun la prioridad
 
 ### Screenshot
 
@@ -40,73 +39,27 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Todo App Main Frontend Mentor Solution](https://github.com/MohMostafa-Web/todo-app-main-frontend-mentor)
-- Live Site URL: [Todo App Main Live Site](https://mohmostafa-web.github.io/todo-app-main-frontend-mentor/)
+- URL Solución: [Todo App Main Frontend Mentor Solution](https://github.com/MohMostafa-Web/todo-app-main-frontend-mentor)
+- URL sitio desplegado: [Todo App Main Live Site](https://mohmostafa-web.github.io/todo-app-main-frontend-mentor/)
 
 ## My process
 
 ### Built with
 
-- Semantic HTML5 markup [header, nav, section]
-- CSS custom properties [CSS varaibles, Media Queries]
+- HTML5 [header, nav, section]
+- CSS [Variables CSS, Media Queries]
 - Flexbox
-- Pure JS
+- JS
 
 ### What I learned
 
-- Use Events: "dragstart", "dragover", "drop" to reorder items using pure js.
-
-```js
-// Drag and Drop Todos
-document.querySelectorAll(".todo-list .todo").forEach(todo => {
-  todo.setAttribute("draggable", true);
-  todo.lastElementChild.setAttribute("draggable", false); // Make delete button not draggable
-  // Add Event "dragstart" to each todo
-  todo.ondragstart = function (e) {
-    e.dataTransfer.setData("number", e.target.dataset.number); // Save "data-number" of dragged item in "number"
-    e.dataTransfer.setData("text", e.target.id); // Save "id" of dragged Item in "text"
-    e.dataTransfer.effectAllowed = "move"; // Make drag effect "move"
-  };
-  // Add Event "dragover" to each todo to allow drop
-  todo.ondragover = function (e) {
-    e.preventDefault();
-    e.dataTransfer.dropEffect = "move"; // Make drop effect "move"
-  };
-  // Add Event "drop" to each todo
-  todo.ondrop = function (e) {
-    e.preventDefault();
-    const number = e.dataTransfer.getData("number");
-    const data = e.dataTransfer.getData("text");
-    if (number > e.currentTarget.dataset.number) { // Check if number of dragged item > number of dropped item
-      e.currentTarget.before(document.getElementById(data)); // Insert dragged item before dropped item
-    } else {
-      e.currentTarget.after(document.getElementById(data)); // Insert dragged item after dropped item
-    }
-    // update Numbering Todos
-    numberingTodos();
-  };
-});
-// Create function to make numbering Todos
-function numberingTodos() {
-  document.querySelectorAll(".todo-list .todo").forEach((todo, i) => {
-    todo.setAttribute("data-number", i + 1);
-  });
-}
-numberingTodos();
-```
+- El uso de eventos: "dragstart", "dragover", "drop" para reorganizar items en JS.
 
 ### Continued development
 
-In the future, I will use more css preprocessors like sass and more frameworks like bootstrap, jQuery, js plugins or react js
-
-### Useful resources
-
-- [w3school](https://www.w3schools.com/html/html5_draganddrop.asp) - This helped me to use Events "dragstart", "dragover", "drop".
-- [MDN Web docs](https://developer.mozilla.org/en-US/docs/Web/API/HTML_Drag_and_Drop_API) - This also helped me so much to understand Events "dragstart", "dragover", "drop".
-- [stackoverflow](https://stackoverflow.com/questions/47811676/ondrop-event-target-is-children-when-dropped-over-children-even-when-capture-ph) - This helped for making sure a parent element is the target of a drop event, not its children.
+En el futuro planeo seguir aprendiendo sobre las funcionalidades de drag and drop en JS ademas de empezar proyectos en React
 
 ## Author
 
-- Linkedin - [Mohamed Mostafa](https://www.linkedin.com/in/mohamed-mostafa-4a08aa1a2/)
-- Frontend Mentor - [@MohMostafa-Web](https://www.frontendmentor.io/profile/MohMostafa-Web)
-- Github - [@MohMostafa-Web](https://github.com/MohMostafa-Web)
+- Linkedin - [Braian Gazano](https://www.linkedin.com/in/braian-gazano/)
+- Github - [Braian Gazano](https://github.com/BraianGazano)
